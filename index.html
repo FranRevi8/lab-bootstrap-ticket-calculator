@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Bootstrap</title>
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .main-content {
+            min-height: 400px;
+        }
+
+        #footer {
+            min-height: 75px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <header class="col-12 text-center p-3 bg-dark text-light">
+                <h1>Súper Calculadora de Bootstrap</h1>
+            </header>
+        </div>
+        <div class="row">
+            <aside class="col-md-1 col-12 order-md-1 order-2 bg-primary p-3">
+            </aside>
+            <main class="main-content col-md-10 col-12 order-md-2 order-1 p-3">
+                <h2 class="text-center">Calcula tu cuenta aquí:</h2>
+                <form>
+                    <div class="form-group">
+                      <label for="factura">Teclea el importe de tu factura:</label>
+                      <input type="number" class="form-control" id="factura" placeholder="00.00€">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                      <label for="propina">Teclea el porcentaje de propina que quieres dar:</label>
+                      <input type="number" class="form-control" id="propina" placeholder="00%">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="discount">¿Tienes un código de descuento?</label>
+                        <input type="text" class="form-control" id="discount" placeholder="Puede que lo encuentres si buscas en la consola...">
+                      </div>
+                      <br>
+                      <div class="text-center"><div class="btn btn-primary">Calcular!</div></div>
+                    
+                  </form>
+                  <section id="resultados" class="text-center">
+                    <!--El html de resultados se inyectará aquí--> 
+                  </section>
+            </main>
+            <aside class="col-md-1 col-12 order-md-3 order-3 bg-primary p-3">
+            </aside>
+        </div>
+        <div class="row">
+            <footer id="footer" class="col-12 text-center bg-dark text-light p-3">
+                <!-- El agradecimiento se inyectará aquí-->
+            </footer>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
+
+
+<script href="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
